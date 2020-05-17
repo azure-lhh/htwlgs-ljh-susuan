@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/htwlgs-ljh-bigdata/htwlgs-ljh-bigdata.iml" filepath="$PROJECT_DIR$/htwlgs-ljh-bigdata/htwlgs-ljh-bigdata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/htwlgs-ljh-common/htwlgs-ljh-common.iml" filepath="$PROJECT_DIR$/htwlgs-ljh-common/htwlgs-ljh-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/htwlgs-ljh-guanwang/htwlgs-ljh-guanwang.iml" filepath="$PROJECT_DIR$/htwlgs-ljh-guanwang/htwlgs-ljh-guanwang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/htwlgs-ljh-susuan.iml" filepath="$PROJECT_DIR$/.idea/htwlgs-ljh-susuan.iml" />
+    </modules>
+  </component>
+</project>

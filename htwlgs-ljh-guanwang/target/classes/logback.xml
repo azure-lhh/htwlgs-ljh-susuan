@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!--log4jdbc 日志配置-->
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+
+    <logger name="org.hibernate.type.descriptor.sql.BasicBinder"  level="OFF" />
+    <logger name="org.hibernate.type.descriptor.sql.BasicExtractor"  level="OFF" />
+    <logger name="org.hibernate.SQL" level="OFF" />
+    <logger name="org.hibernate.engine.QueryParameters" level="OFF" />
+    <logger name="org.hibernate.engine.query.HQLQueryPlan" level="OFF" />
+
+    <!-- 日志输出级别 -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+    <!--仅仅记录 SQL 语句，会将占位符替换为实际的参数  如果使用jdbc.sqltiming记录sql执行时间,
+    将jdbc.sqlonly 设置为OFF, 否则sql将会输出两遍-->
+    <logger name="jdbc.sqlonly" level="OFF">
+        <appender-ref ref="CONSOLE" />
+    </logger>
+    <!--除了 ResultSet 之外的所有JDBC调用信息，篇幅较长-->
+    <logger name="jdbc.audit" level="OFF">
+        <appender-ref ref="CONSOLE" />
+    </logger>
+    <!--包含 ResultSet 的信息，输出篇幅较长-->
+    <logger name="jdbc.resultset" level="OFF">
+        <appender-ref ref="CONSOLE" />
+    </logger>
+
+    <!--输出了 Connection 的 open、close 等信息-->
+    <logger name="jdbc.connection" level="OFF">
+        <appender-ref ref="CONSOLE" />
+    </logger>
+    <!--包含 SQL 语句实际的执行时间-->
+    <logger name="jdbc.sqltiming" level="INFO">
+<!--        这个打开会有两条一样的日志记录-->
+<!--        <appender-ref ref="CONSOLE" />-->
+    </logger>
+
+</configuration>

@@ -1,0 +1,14 @@
+cn\htwlgs\common\utils\CopyUtils.class
+cn\htwlgs\common\domain\ErrorCodeVO.class
+cn\htwlgs\common\utils\HttpUtilsResult.class
+cn\htwlgs\common\annotation\TransmissionRequired.class
+cn\htwlgs\common\domain\JsonResult.class
+cn\htwlgs\common\utils\DateUtil.class
+cn\htwlgs\common\utils\Validator.class
+cn\htwlgs\common\exception\BusinessException.class
+cn\htwlgs\common\entity\UserMenuModel.class
+cn\htwlgs\common\entity\LoginModel.class
+cn\htwlgs\common\handler\GlobalExceptionHandler.class
+cn\htwlgs\common\utils\CopyProtiesUtils.class
+cn\htwlgs\common\handler\Permission.class
+cn\htwlgs\common\HtwlgsCommonApplication.class
